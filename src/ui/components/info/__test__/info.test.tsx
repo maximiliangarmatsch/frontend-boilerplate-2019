@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'enzyme';
 // Section Component
-import Info from '../info.component';
+import Info from '../_info';
 
 describe('<Info />', () => {
   it('renders', () => {

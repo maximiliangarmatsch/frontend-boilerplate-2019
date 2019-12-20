@@ -2,7 +2,7 @@ import React from 'react';
 // material-ui core components
 import { Typography, Paper } from '@material-ui/core';
 // Header style
-import { styles } from './style.component';
+import { styles } from './_info.style';
 
 function Info() {
   const classes = styles();

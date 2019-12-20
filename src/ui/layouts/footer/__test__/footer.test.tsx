@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'enzyme';
 // Footer Component
-import Footer from '../footer.component';
+import Footer from '../footer';
 
 describe('<Footer />', () => {
   it('renders', () => {

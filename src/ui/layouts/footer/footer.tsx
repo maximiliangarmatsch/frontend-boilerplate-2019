@@ -1,8 +1,8 @@
 import React from 'react';
 // Footer config
-import { config } from './config.component'
+import { config } from './footer.config'
 // Fotter style
-import { styles } from './style.component'
+import { styles } from './footer.style'
 
 export default function Footer() {
 	const classes = styles();

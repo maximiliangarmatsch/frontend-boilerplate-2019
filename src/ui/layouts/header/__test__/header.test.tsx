@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, shallow } from 'enzyme';
 // Template Component
-import Header from '../header.component';
+import Header from '../header';
 
 describe('<Header />', () => {
     test('renders', () => {

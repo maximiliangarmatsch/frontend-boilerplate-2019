@@ -1,5 +1,5 @@
 // Interfaces
-import { IHeader } from '../../interfaces/header.inteface';
+import { IHeader } from '../../../interfaces/header.inteface';
 
 // Component Data
 export const config: IHeader = {

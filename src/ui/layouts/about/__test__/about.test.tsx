@@ -1,9 +1,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
 // Template Component
-import About from '../about.component';
+import About from '../about';
 // Sections Component
-import Info from '../../info/info.component';
+import Info from '../../../components/info/_info';
 
 describe('<About />', () => {
   it('renders', () => {

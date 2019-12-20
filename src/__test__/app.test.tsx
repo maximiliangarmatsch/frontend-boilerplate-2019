@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 // Main Component
-import App from '../app.module';
+import App from '../app';
 // Template Component
-import Header from '../components/header/header.component';
-import Footer from '../components/footer/footer.component';
+import Header from '../ui/layouts/header/header';
+import Footer from '../ui/layouts/footer/footer';
 
 describe('<App />', () => {
   test('renders', () => {

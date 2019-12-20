@@ -6,9 +6,9 @@ import { Typography } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 // Header config
-import { config } from './config.component';
+import { config } from './header.config';
 // Header style
-import { styles } from './style.component';
+import { styles } from './header.style';
 
 function Header() {
     const classes = styles();

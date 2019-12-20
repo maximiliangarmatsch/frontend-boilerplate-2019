@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'enzyme';
 // Section Component
-import Sponsors from '../sponsors.component';
+import Sponsors from '../_sponsors';
 
 describe('<Sponsors />', () => {
   it('renders', () => {

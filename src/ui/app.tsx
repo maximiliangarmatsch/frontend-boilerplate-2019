@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './ui/templates/header/header';
-import Footer from './ui/templates/footer/footer';
-import { routes } from './routes';
-import ErrorBoundary from './utils/error-boundary';
+import Header from './templates/header/header';
+import Footer from './templates/footer/footer';
+import { routes } from '../routes';
+import ErrorBoundary from '../utils/error-boundary';
 import { CssBaseline } from '@material-ui/core';
 
 function App() {

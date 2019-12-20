@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { ApolloProvider } from '@apollo/react-hooks';
 import * as serviceWorker from './serviceWorker'
-import App from './app'
+import App from './ui/app'
 import { client } from './config/apollo.config';
 import { Auth0Provider } from "./react-auth0-spa";
 import config from "./auth_config.json";

@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 // Main Component
 import App from '../app';
 // Template Component
-import Header from '../ui/templates/header/header';
-import Footer from '../ui/templates/footer/footer';
+import Header from '../templates/header/header';
+import Footer from '../templates/footer/footer';
 
 describe('<App />', () => {
   test('renders', () => {

@@ -1,3 +1,3 @@
 // Component Data
-export const data: any = {
+export const config: any = {
 };

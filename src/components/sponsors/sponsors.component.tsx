@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 // Style
 import {styles} from './style.component';
 //Config
-import {data} from './config.component';
+import {config} from './config.component';
 
 export default function Sponsors() {
   const classes = styles();
@@ -12,7 +12,7 @@ export default function Sponsors() {
   return (
     <div className={classes.root}>
       <Grid container spacing={1} className={classes.container}>
-      {data.grid.map(res => {
+      {config.grid.map(res => {
 				return <Grid container item xs={res.size} spacing={res.spacing} key={res.id}>
 					{res.element(classes)}
 				</Grid>

@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import { IGrid } from '../../interfaces/shared/grid.interface';
 
 // Component Data
-export const data: IGrid = {
+export const config: IGrid = {
 	grid: [{
 		id:1,
 		size: 12,

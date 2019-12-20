@@ -7,7 +7,7 @@ import { IFooter } from '../../interfaces/footer.interface';
 
 
 // Component Data
-export const data: IFooter = {
+export const config: IFooter = {
 	author: 'Maximilian Garmatsch',
 	git: {
 		text: 'Project Boilerplate',

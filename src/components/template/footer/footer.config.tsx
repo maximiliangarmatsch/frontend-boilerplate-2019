@@ -3,7 +3,7 @@ import React from 'react';
 import Favorite from '@material-ui/icons/Favorite';
 import Done from '@material-ui/icons/Done';
 // Interfaces
-import { IFooter } from '../../interfaces/footer.interface';
+import { IFooter } from '../../../interfaces/footer.interface';
 
 
 // Component Data

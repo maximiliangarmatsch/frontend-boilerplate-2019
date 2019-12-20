@@ -2,11 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 //Componets 
-import Header from './sections/header/header.section';
-import Footer from './sections/footer/footer.section';
-// Views
-import VAbout from './views/about/about.view';
-import VContact from './views/contact/contact.view';
+import Header from './components/template/header/header.template';
+import Footer from './components/template/footer/footer.template';
+import { data } from './app.config';
+
 
 function App() {
 	return (
@@ -14,8 +13,11 @@ function App() {
 			<Router>
 				<Header />
 				<Switch>
-					<Route path='/about' component={VAbout} />
-					<Route path='/contact' component={VContact} />
+					{data.routs.map(res => {
+						return <Route path={res.path} key={res.id}>
+							{res.component}
+						</Route>
+					})}
 				</Switch>
 				<Footer />
 			</Router>

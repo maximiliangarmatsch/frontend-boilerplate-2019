@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Footer from './footer.section';
+import Footer from './footer.template';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../../sections/about/about.section";
+import About from "../../components/template/about/about.template";
 
 //Componets
 

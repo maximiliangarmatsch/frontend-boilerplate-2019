@@ -2,9 +2,9 @@ import React from 'react';
 // material-ui core components
 import { Typography, Paper } from '@material-ui/core';
 // Header style
-import { styles } from './about.style';
+import { styles } from './info.style';
 
-function About() {
+function Info() {
   const classes = styles();
 
   return (
@@ -18,4 +18,4 @@ function About() {
     </Paper>
   );
 }
-export default About;
+export default Info;

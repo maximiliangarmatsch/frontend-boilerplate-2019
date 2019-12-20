@@ -2,7 +2,7 @@ import React from 'react';
 // @material-ui/core components
 import Grid from '@material-ui/core/Grid';
 // Grid Config
-import { styles } from './container.config'
+import { styles } from './container.style'
 
 export default function Container(props:any) {
   const classes = styles();

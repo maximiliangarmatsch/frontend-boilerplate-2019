@@ -127,6 +127,7 @@ Add additional notes about how to deploy this on a live system
 | i18next-xhr-backend  |      3.2.2    |       ???????????      |                                                                                             |
 | react-i18next        |     11.2.2    |       ???????????      |                                                                                             |
 | standard             |     14.3.1    |       ???????????      |  JavaScript Standard Style [standard](https://standardjs.com)                               |
+| client-oauth2        |      4.2.5    |       ???????????      |                                                                                             |
 
 ## Contributing
 
@@ -134,7 +135,7 @@ Please read [CONTRIBUTING.md]("link") for details on our code of conduct, and th
 
 ## Convention
 
-????
+[Atomic Design](http://atomicdesign.bradfrost.com/) by Brad Frost
 
 ## Versioning
 

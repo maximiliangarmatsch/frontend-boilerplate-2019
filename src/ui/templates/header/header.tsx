@@ -1,17 +1,15 @@
 import React from 'react';
-// Router
 import { Link } from 'react-router-dom';
-// material-ui core components
 import { Typography } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-// Header config
 import { config } from './header.config';
-// Header style
 import { styles } from './header.style';
+import { useAuth0 } from "../../../react-auth0-spa";
 
 function Header() {
     const classes = styles();
+    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
     return (
         <header>
@@ -28,6 +26,13 @@ function Header() {
                                 </Link>
                             })}
                         </Typography>
+                        <div>
+                            {!isAuthenticated && (
+                                <button onClick={() => loginWithRedirect({})}>Log in</button>
+                            )}
+
+                            {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+                        </div>
                     </Toolbar>
                 </AppBar>
             </div>

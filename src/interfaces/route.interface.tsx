@@ -1,7 +1,8 @@
 
 export interface IRoute {
 	routes: {
-		id: number
+		id: number,
+		exact?: boolean,
 		path: string,
 		component: () => any
 	}[]

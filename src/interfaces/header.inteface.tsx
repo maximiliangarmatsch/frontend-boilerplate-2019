@@ -1,7 +1,7 @@
 
 export interface IHeader {
 	routs?:{
-		id:number
+		id:number,
 		to:string,
 		name:string
 	}[]

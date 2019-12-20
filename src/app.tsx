@@ -4,24 +4,31 @@ import Header from './ui/templates/header/header';
 import Footer from './ui/templates/footer/footer';
 import { routes } from './routes';
 import ErrorBoundary from './utils/error-boundary';
-import LocaleProvider from './utils/local-provider';
+import { CssBaseline } from '@material-ui/core';
 
 function App() {
     return (
         <ErrorBoundary>
-        <LocaleProvider>
-            <Router>
-                <Header />
-                <Switch>
-                    {routes.routes.map(res => {
-                        return <Route path={res.path} key={res.id}>
-                            {res.component}
-                        </Route>
-                    })}
-                </Switch>
-                <Footer />
-            </Router>
-            </LocaleProvider>
+                <CssBaseline/>
+                <Router>
+                    <Header />
+                    <React.Fragment>
+                        <Switch>
+                            {routes.routes.map(res => {
+                                if (res.exact) {
+                                    return <Route exact path={res.path} key={res.id}>
+                                        {res.component}
+                                    </Route>
+                                } else {
+                                    return <Route path={res.path} key={res.id}>
+                                        {res.component}
+                                    </Route>
+                                }
+                            })}
+                        </Switch>
+                    </React.Fragment>
+                    <Footer />
+                </Router>
         </ErrorBoundary>
     );
 }

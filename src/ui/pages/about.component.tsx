@@ -1,5 +1,5 @@
 import React from "react";
-import About from "../layouts/about/about";
+import About from "../templates/about/about";
 
 //Componets
 function VAbout() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './ui/layouts/header/header';
-import Footer from './ui/layouts/footer/footer';
+import Header from './ui/templates/header/header';
+import Footer from './ui/templates/footer/footer';
 import { routes } from './routes';
 import ErrorBoundary from './utils/error-boundary';
 import LocaleProvider from './utils/local-provider';

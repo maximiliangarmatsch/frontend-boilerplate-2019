@@ -55,6 +55,7 @@ export function register (config) {
 }
 
 function registerValidSW (swUrl, config) {
+  console.log('registerValidSW');
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
@@ -100,6 +101,7 @@ function registerValidSW (swUrl, config) {
 
 function checkValidServiceWorker (swUrl, config) {
   // Check if the service worker can be found. If it can't reload the page.
+  console.log('checkValidServiceWorker');
   fetch(swUrl)
     .then(response => {
       // Ensure service worker exists, and that we really are getting a JS file.
@@ -108,6 +110,7 @@ function checkValidServiceWorker (swUrl, config) {
         response.status === 404 ||
         (contentType != null && contentType.indexOf('javascript') === -1)
       ) {
+        console.log('// No service worker found. Probably a different app. Reload the page.');
         // No service worker found. Probably a different app. Reload the page.
         navigator.serviceWorker.ready.then(registration => {
           registration.unregister().then(() => {

@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 // Template Component
 import About from '../about';
 // Sections Component
-import Info from '../../../components/info/_info';
+import Info from '../../../molecules/info/_info';
 
 describe('<About />', () => {
   it('renders', () => {

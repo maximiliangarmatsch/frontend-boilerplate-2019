@@ -1,6 +1,6 @@
 import React from 'react';
 import { IRoute } from './interfaces/route.interface';
-import VAbout from './ui/views/about.component';
+import VAbout from './ui/pages/about.component';
 
 export const routes: IRoute = {
 	routes: [{

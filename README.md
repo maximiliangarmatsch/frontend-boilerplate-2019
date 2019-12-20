@@ -26,45 +26,55 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Coding style
 
-1. Components: controls a patch of screen called a view.
-2. Interfaces: An interface is a syntactical contract that an entity should conform to. In other words, an interface defines the syntax that any entity must adhere to. Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members. It often helps in providing a standard structure that the deriving classes would follow.
+*Atoms* - are UI elements that can’t be broken down any further and serve as the elemental building blocks of an interface.
+*Molecules* - are collections of atoms that form relatively simple UI components.
+*Organisms* - are relatively complex components that form discrete sections of an interface.
+*Templates* - place components within a layout and demonstrate the design’s underlying content structure.
+*Pages* - apply real content to templates and articulate variations to demonstrate the final UI and test the resilience of the design system.
 
 ### App structure
 
 |-- src
-     |-- assets
-       |--[+] fonts
-       |--[+] icons
-       |--[+] images
-       |-- style
-          |-- general
-            |-- master-style.tsx
-          |-- material-kit-react.js
-     |-- intrerfaces
-       |-- [+] shared
-       |-- footer.intrerface.tsx
-       |-- header.intrerface.tsx
-     |-- components
-       |-- info
-           |-- [+] __test__
-           |-- config.component.tsx
-           |-- syle.component.tsx
-           |-- info.component.tsx
-     |-- views
-          |-- home.module.tsx
-     |-- config
-          |-- apollo.tsx
-          |-- i18n.tsx
-     |-- api
-          |-- mocks
-          |-- mutations
-          |-- queries
-     |-- i18n
-          |-- translation-en.tsx
      |-- [+] __test__
           |-- app.module.tsx
           |-- routes.tsx
           |-- index.js
+     |-- api
+          |-- mocks
+          |-- mutations
+          |-- queries
+     |-- assets
+          |--[+] fonts
+          |--[+] icons
+          |--[+] images
+          |-- style
+               |-- general
+                    |-- master-style.tsx
+               |-- material-kit-react.js
+     |-- config
+          |-- apollo.tsx
+          |-- i18n.tsx
+     |-- i18n
+          |-- translation-en.tsx
+     |-- intrefaces
+          |-- [+] shared
+          |-- footer.intrerface.tsx
+          |-- header.intrerface.tsx
+     |-- ui
+          |-- atoms
+          |-- molecules
+               |-- info
+                    |-- [+] __test__
+                    |-- _info.config.tsx
+                    |-- _info.syle.tsx
+                    |-- _info.tsx
+          |-- organisms
+          |-- templates
+          |-- pages
+               |-- about.module.tsx
+     |-- utils
+          |-- error-boundary.tsx
+          |-- local-provider.tsx
 
 ## Running the tests
 

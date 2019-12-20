@@ -1,7 +1,7 @@
 import React from 'react';
 // Sections
-import Info from '../../components/info/_info';
-import Sponsors from '../../components/sponsors/_sponsors';
+import Info from '../../molecules/info/_info';
+import Sponsors from '../../organisms/sponsors/_sponsors';
 
 function About() {
 

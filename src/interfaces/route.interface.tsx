@@ -1,6 +1,6 @@
 
 export interface IRoute {
-	routs: {
+	routes: {
 		id: number
 		path: string,
 		component: () => any

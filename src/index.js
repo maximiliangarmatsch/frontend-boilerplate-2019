@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // Service Worker
 import * as serviceWorker from './serviceWorker';
 // App
-import App from './app';
+import App from './app.module';
 
 ReactDOM.render(
 <App/>, 

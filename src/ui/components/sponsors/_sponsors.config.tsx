@@ -1,55 +1,47 @@
-import React from 'react';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { IGrid } from '../../../interfaces/shared/grid.interface';
+import { gqlUser } from '../../../api/queries/user';
+import { useQuery } from '@apollo/react-hooks';
 
-export const sponsors_object: IGrid = {
+const row: IGrid = {
 	grid: [{
-		id:1,
+		id: 1,
 		size: 12,
-		spacing: 3,
-		child: (res: any) => <FormRow classes={res} />
+		spacing: 3
 	}, {
-		id:2,
+		id: 2,
 		size: 12,
-		spacing: 3,
-		child: (res: any) => <FormRow classes={res} />
+		spacing: 3
 	}, {
-		id:3,
+		id: 3,
 		size: 12,
-		spacing: 3,
-		child: (res: any) => <FormRow classes={res} />
+		spacing: 3
 	}
 	]
 };
 
-function FormRow({ classes }: any) {
+const column: IGrid = {
 
-	// const {userData, loading, error} = useQuery(gqlUsers);
+	grid: [{
+		id: 1,
+		size: 4
+	}, {
+		id: 2,
+		size: 4
+	}, {
+		id: 3,
+		size: 4
+	}
+	]
+};
 
-	const formData: IGrid = {
-		grid: [{
-			id:1,
-			size: 4,
-			child: (res: any) => <Paper className={res.paper}>Text</Paper>
-		}, {
-			id:2,
-			size: 4,
-			child: (res: any) => <Paper className={res.paper}>Text</Paper>
-		}, {
-			id:3,
-			size: 4,
-			child: (res: any) => <Paper className={res.paper}>Text</Paper>
-		}
-		]
-	};
-	return (
-		<React.Fragment>
-			{formData.grid.map(res => {
-				return <Grid item xs={res.size} key={res.id}>
-					{res.child(classes)}
-				</Grid>
-			})}
-		</React.Fragment>
-	);
+
+function Users() {
+	return useQuery(gqlUser);
+}
+
+
+export const sponsorsConfig = {
+	row,
+	column,
+	Users
 }

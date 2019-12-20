@@ -53,7 +53,7 @@ export const client = new ApolloClient({
             if (networkError) console.log`[Network error]: ${networkError}`;
         }),
         new HttpLink({
-            uri: "<URL>",
+            uri: "http://localhost:4000/",
             credentials: "same-origin"
         })
     ]),

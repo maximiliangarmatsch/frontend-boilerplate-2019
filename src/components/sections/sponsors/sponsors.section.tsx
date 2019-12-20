@@ -11,7 +11,7 @@ export default function Sponsors() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
+      <Grid container spacing={1} className={classes.container}>
       {data.grid.map(res => {
 				return <Grid container item xs={res.size} spacing={res.spacing} key={res.id}>
 					{res.element(classes)}

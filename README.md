@@ -58,7 +58,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-|   Name            |    Version    |         License        |    Description   |
+|   Name            |    Version    |         License        |    Description   |  Links  |
 |-------------------|:-------------:|:----------------------:|------------------|
 | react             |    16.12.0    |       MIT License      |                  |
 | react-dom         |    16.12.0    |       MIT License      |                  |
@@ -74,6 +74,8 @@ Add additional notes about how to deploy this on a live system
 ## Contributing
 
 Please read [CONTRIBUTING.md]("link") for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Convetions
 
 ## Versioning
 

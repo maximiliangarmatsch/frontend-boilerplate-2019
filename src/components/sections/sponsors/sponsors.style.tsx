@@ -10,5 +10,8 @@ const style: any = {
 		textAlign: 'center',
 		color: '#DDD',
 	  },
+	  container:{
+		paddingTop: 16
+	  }
 };
 export const styles = makeStyles(style); 

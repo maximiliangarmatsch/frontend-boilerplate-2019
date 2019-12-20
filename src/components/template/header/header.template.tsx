@@ -1,6 +1,6 @@
 import React from 'react';
 // Router
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 // material-ui core components
 import { Typography } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
@@ -19,6 +19,7 @@ function Header() {
         <AppBar position='static'>
           <Toolbar>
             <Typography variant='h6' className={classes.title}>
+              <Router>
               {data.routs!.map(res => {
                 return <Link
                   className={classes.menuButton}
@@ -27,6 +28,7 @@ function Header() {
                   {res.name}
                 </Link>
               })}
+              </Router>
             </Typography>
           </Toolbar>
         </AppBar>

@@ -8,7 +8,7 @@ export default function Container(props:any) {
   const classes = styles();
   const {...rest } = props;
   return (
-	<Grid container {...rest} className={`${classes.grid}`}>
+	<Grid container {...rest} className={classes.grid}>
     </Grid>
   );
 }

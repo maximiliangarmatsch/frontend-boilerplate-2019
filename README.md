@@ -127,7 +127,6 @@ Add additional notes about how to deploy this on a live system
 | i18next-xhr-backend  |   3.2.2 |     MIT License    | Load resources from a backend using the xhr API. [link](https://www.npmjs.com/package/i18next-xhr-backend)         |
 | react-i18next        |  11.2.2 |     MIT License    | [react-i18next](https://react.i18next.com/)                                                                        |
 | standard             |  14.3.1 |     MIT License    | JavaScript Standard Style [standard](https://standardjs.com)                                                       |
-| auth0/auth0-spa-js   |   1.6.0 |     MIT License    | SDK for SPA using Authorization Code Grant Flow with PKCE. [link](https://auth0.com/docs/libraries/auth0-spa-js)   |
 | dotenv               |   8.2.0 |    BSD-2-Clause    | zero-dependency module that loads environment variables from a .env file                                           |
 
 ## Contributing

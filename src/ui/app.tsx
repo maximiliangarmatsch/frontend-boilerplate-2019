@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { appConfig } from './app.config';
 import ErrorBoundary from '../utils/error-boundary';
 import { CssBaseline } from '@material-ui/core';
-import { useAuth0 } from '../config/auth/react-auth0-spa';
 
 function App() {
-    const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
     return (
         <ErrorBoundary>
@@ -26,13 +24,6 @@ function App() {
                                 }
                             })}
                         </Switch>
-                        <div>
-                            {!isAuthenticated && (
-                                <button onClick={() => loginWithRedirect({})}>Log in</button>
-                            )}
-
-                            {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
-                        </div>
                     </React.Fragment>
                 </Router>
         </ErrorBoundary>

@@ -1,9 +1,12 @@
 export interface ITextField {
-	variant:"outlined", 
-	required: true,
-	fullWidth: true,
-	id:"email"
-	label:"Email Address"
-	name:"email"
-	autoComplete:"email"
+	variant?: "outlined" | "filled",
+	required?: true | false,
+	fullWidth?: true,
+	id: string,
+	label?: string,
+	type: string,
+	name?: string,
+	autoComplete?: "on" | "off",
+	defaultValue?: string,
+	helperText?: string
 }

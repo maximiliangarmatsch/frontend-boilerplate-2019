@@ -4,8 +4,8 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import * as serviceWorker from './serviceWorker'
 import App from './ui/app'
 import { client } from './config/apollo.config';
-import { Auth0Provider } from "./react-auth0-spa";
-import config from "./auth_config.json";
+import { Auth0Provider } from "./config/auth/react-auth0-spa";
+import config from "./config/auth/auth_config.json";
 
 const onRedirectCallback = () => {
     // A function that routes the user to the right place

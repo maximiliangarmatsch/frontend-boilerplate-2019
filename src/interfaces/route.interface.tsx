@@ -1,6 +1,6 @@
 
 export interface IRoute {
-	routes: {
+	list: {
 		id: number,
 		exact?: boolean,
 		path: string,

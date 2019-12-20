@@ -1,4 +1,4 @@
-# Front-end Protfolio Boilerplate
+# Front-end Portfolio Boilerplate
 
 One Paragraph of project description goes here
 
@@ -32,9 +32,9 @@ End with an example of getting some data out of the system or using it for a lit
 *Templates* - place components within a layout and demonstrate the design’s underlying content structure.
 *Pages* - apply real content to templates and articulate variations to demonstrate the final UI and test the resilience of the design system.
 
-### App structure
+### App structure src/
 
-|-- src
+src
      |-- [+] __test__
           |-- app.module.tsx
           |-- routes.tsx
@@ -102,32 +102,33 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-|   Name               | Version |       License      |    Description                                                                                                    |
-|----------------------|:-------:|:------------------:|-------------------------------------------------------------------------------------------------------------------|
-| react                | 16.12.0 |     MIT License    | [react](https://reactjs.org/docs/getting-started.html)                                                            |
-| react-dom            | 16.12.0 |     MIT License    | [react-dom](https://reactjs.org/docs/react-dom.html)                                                              |
-| react-scripts        |   3.2.0 |     MIT License    | Scripts and configuration used by [CRA](https://create-react-app.dev/docs/getting-started/)                       |
-| react-router-dom     |   5.1.2 |     MIT License    | [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)                                 |
-| typescript           |   3.7.2 | Apache License 2.0 | [typescript](https://www.typescriptlang.org/)                                                                     |
-| core-js              |   3.4.1 |     MIT License    | Modular standard library for JavaScript [core-js](https://github.com/zloirock/core-js)                            |
-| material-ui/core     |   4.6.1 |     MIT License    | [material-ui/core](https://material-ui.com/getting-started/installation/)                                         |
-| material-ui/icons    |   4.5.1 |     MIT License    | [material-ui/icons](https://material-ui.com/components/material-icons/)                                           |
-| jest                 |  24.9.0 |     MIT License    | Testing Framework [jest](https://jestjs.io/docs/en/getting-started.html)                                          |
-| enzyme               |  3.10.0 |     MIT License    | Testing utility for React [enzyme](https://airbnb.io/enzyme/docs/api/)                                            |
-| apollo/react-hooks   |   3.1.3 |     MIT License    | [apollo/react-hooks](https://www.apollographql.com/docs/react/api/react-hooks/)                                   |
-| apollo-boost         |   0.4.5 |     MIT License    | Easiest way to start with Apollo Client![boost](https://www.npmjs.com/package/apollo-boost)                       |
-| apollo-cache-inmemory|   1.6.3 |     MIT License    | Recommended cache implementation[link](https://www.npmjs.com/package/apollo-cache-inmemory)                       |
-| apollo-client        |   2.6.4 |     MIT License    | [apollo-client](https://www.apollographql.com/docs/react/)                                                        |
-| apollo-link          |  1.2.13 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                           |
-| apollo-link-error    |  1.1.12 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                           |
-| apollo-link-http     |  1.5.16 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                           |
-| graphql              |  14.5.8 |     MIT License    | [graphql](https://graphql.org/code/#javascript)                                                                   |
-| graphql-tag          |  2.10.1 |     MIT License    | Utilities for parsing GraphQL queries. [link](https://www.npmjs.com/package/graphql-tag)                          |
-| i18next-browser-lan..|   4.0.1 |     MIT License    | Use to detect user language in the browser. [link](https://www.npmjs.com/package/i18next-browser-languagedetector)|
-| i18next-xhr-backend  |   3.2.2 |     MIT License    | Load resources from a backend using the xhr API.[link](https://www.npmjs.com/package/i18next-xhr-backend)         |
-| react-i18next        |  11.2.2 |     MIT License    | [react-i18next](https://react.i18next.com/)                                                                       |
-| standard             |  14.3.1 |     MIT License    | JavaScript Standard Style [standard](https://standardjs.com)                                                      |
-| client-oauth2        |   4.2.5 | Apache License 2.0 | [client-oauth2](https://github.com/mulesoft/js-client-oauth2)                                                     |
+|   Name               | Version |       License      |    Description                                                                                                     |
+|----------------------|:-------:|:------------------:|--------------------------------------------------------------------------------------------------------------------|
+| react                | 16.12.0 |     MIT License    | [react](https://reactjs.org/docs/getting-started.html)                                                             |
+| react-dom            | 16.12.0 |     MIT License    | [react-dom](https://reactjs.org/docs/react-dom.html)                                                               |
+| react-scripts        |   3.3.0 |     MIT License    | Scripts and configuration used by [CRA](https://create-react-app.dev/docs/getting-started/)                        |
+| react-router-dom     |   5.1.2 |     MIT License    | [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)                                  |
+| typescript           |   3.7.2 | Apache License 2.0 | [typescript](https://www.typescriptlang.org/)                                                                      |
+| core-js              |   3.4.1 |     MIT License    | Modular standard library for JavaScript [core-js](https://github.com/zloirock/core-js)                             |
+| material-ui/core     |   4.6.1 |     MIT License    | [material-ui/core](https://material-ui.com/getting-started/installation/)                                          |
+| material-ui/icons    |   4.5.1 |     MIT License    | [material-ui/icons](https://material-ui.com/components/material-icons/)                                            |
+| jest                 |  24.9.0 |     MIT License    | Testing Framework [jest](https://jestjs.io/docs/en/getting-started.html)                                           |
+| enzyme               |  3.10.0 |     MIT License    | Testing utility for React [enzyme](https://airbnb.io/enzyme/docs/api/)                                             |
+| apollo/react-hooks   |   3.1.3 |     MIT License    | [apollo/react-hooks](https://www.apollographql.com/docs/react/api/react-hooks/)                                    |
+| apollo-boost         |   0.4.5 |     MIT License    | Easiest way to start with Apollo Client! [boost](https://www.npmjs.com/package/apollo-boost)                       |
+| apollo-cache-inmemory|   1.6.3 |     MIT License    | Recommended cache implementation. [link](https://www.npmjs.com/package/apollo-cache-inmemory)                      |
+| apollo-client        |   2.6.4 |     MIT License    | [apollo-client](https://www.apollographql.com/docs/react/)                                                         |
+| apollo-link          |  1.2.13 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                            |
+| apollo-link-error    |  1.1.12 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                            |
+| apollo-link-http     |  1.5.16 |     MIT License    | [apollo-link](https://www.apollographql.com/docs/link/)                                                            |
+| graphql              |  14.5.8 |     MIT License    | [graphql](https://graphql.org/code/#javascript)                                                                    |
+| graphql-tag          |  2.10.1 |     MIT License    | Utilities for parsing GraphQL queries. [link](https://www.npmjs.com/package/graphql-tag)                           |
+| i18next-browser-lan..|   4.0.1 |     MIT License    | Use to detect user language in the browser. [link](https://www.npmjs.com/package/i18next-browser-languagedetector) |
+| i18next-xhr-backend  |   3.2.2 |     MIT License    | Load resources from a backend using the xhr API. [link](https://www.npmjs.com/package/i18next-xhr-backend)         |
+| react-i18next        |  11.2.2 |     MIT License    | [react-i18next](https://react.i18next.com/)                                                                        |
+| standard             |  14.3.1 |     MIT License    | JavaScript Standard Style [standard](https://standardjs.com)                                                       |
+| auth0/auth0-spa-js   |   1.6.0 |     MIT License    | SDK for SPA using Authorization Code Grant Flow with PKCE. [link](https://auth0.com/docs/libraries/auth0-spa-js)   |
+| dotenv               |   8.2.0 |    BSD-2-Clause    | zero-dependency module that loads environment variables from a .env file                                           |
 
 ## Contributing
 
@@ -135,7 +136,7 @@ Please read [CONTRIBUTING.md]("link") for details on our code of conduct, and th
 
 ## Convention
 
-[Atomic Design](http://atomicdesign.bradfrost.com/) by Brad Frost
+[Atomic Design](http://atomicdesign.bradfrost.com/) by Brad Frost - " Atomic design has nothing to do with web-specific subjects like CSS or JavaScript architecture ".
 
 ## Versioning
 
@@ -152,7 +153,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* Hat tip to anyone who's code was used
 * Inspiration
 * etc
 
@@ -170,7 +171,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 | IE10    | <250MB                   |
 | Edge    | Dependent on volume size |
 
-In Chrome and Opera, your storage is per origin (rather than per API). Both storage mechanisms will store data until the browser quota is reached. Apps can check how much quota they’re using with the Quota Management API. In Chrome, apps can use up to 6% of free disk space. In Firefox, apps can use up to 10% of free disk space, but will prompt the user for further storage requests after 50MB data stored. In mobile Safari, apps can use up to 50MB max, whereas desktop Safari allows unlimited storage (and prompts after 5MB). IE10+ maxes out at 250MB and prompts the user at 10MB. PouchDB tracks IDB storage behavior.
+In Chrome and Opera, your storage is per origin (rather than per API). Both storage mechanisms will store data until the browser quota is reached. Apps can check how much quota they’re using with the Quota Management API. In Chrome, apps can use up to 6% of free disk space. In Firefox, apps can use up to 10% of free disk space but will prompt the user for further storage requests after 50MB data stored. In mobile Safari, apps can use up to 50MB max, whereas desktop Safari allows unlimited storage (and prompts after 5MB). IE10+ maxes out at 250MB and prompts the user at 10MB. PouchDB tracks IDB storage behavior.
 
 * How can I tell how much storage space my app is using?
 

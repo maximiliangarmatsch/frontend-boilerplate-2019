@@ -16,23 +16,9 @@ exports[`<Header /> renders 1`] = `
           <Link
             className="makeStyles-menuButton-2"
             key="1"
-            to="/app"
-          >
-            Home
-          </Link>
-          <Link
-            className="makeStyles-menuButton-2"
-            key="2"
             to="/about"
           >
             About
-          </Link>
-          <Link
-            className="makeStyles-menuButton-2"
-            key="3"
-            to="/contact"
-          >
-            Contact
           </Link>
         </WithStyles(ForwardRef(Typography))>
       </WithStyles(ForwardRef(Toolbar))>

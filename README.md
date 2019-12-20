@@ -26,10 +26,8 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Coding style
 
-1. Modules: are containers for a cohesive block of code dedicated to an application domain, a workflow, or a closely related set of capabilities. They can contain components, and other code files whose scope is defined by the containing Module.
-2. Components: controls a patch of screen called a view.
-3. Services: are a broad category encompassing any value, function, or feature that an app needs. A service is typically a class with a narrow, well-defined purpose. It should do something specific and do it well. By separating a component's view-related functionality from other kinds of processing, you can make your component classes lean and efficient. A component can delegate certain tasks to services, such as fetching data from the server, validating user input, or logging directly to the console. By defining such processing tasks in an injectable service class, you make those tasks available to any component. You can also make your app more adaptable by injecting different providers of the same kind of service, as appropriate in different circumstances.
-4. Interfaces: An interface is a syntactical contract that an entity should conform to. In other words, an interface defines the syntax that any entity must adhere to. Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members. It often helps in providing a standard structure that the deriving classes would follow.
+1. Components: controls a patch of screen called a view.
+2. Interfaces: An interface is a syntactical contract that an entity should conform to. In other words, an interface defines the syntax that any entity must adhere to. Interfaces define properties, methods, and events, which are the members of the interface. Interfaces contain only the declaration of the members. It is the responsibility of the deriving class to define the members. It often helps in providing a standard structure that the deriving classes would follow.
 
 ### App structure
 
@@ -52,20 +50,21 @@ End with an example of getting some data out of the system or using it for a lit
            |-- config.component.tsx
            |-- syle.component.tsx
            |-- info.component.tsx
-     |-- modules
-       |-- home
-           |-- [+] __test__
-           |-- config.module.tsx
-           |-- syle.module.tsx
-           |-- home.module.tsx
-     |-- services
      |-- views
           |-- home.module.tsx
-     |
+     |-- config
+          |-- apollo.tsx
+          |-- i18n.tsx
+     |-- api
+          |-- mocks
+          |-- mutations
+          |-- queries
+     |-- i18n
+          |-- translation-en.tsx
      |-- [+] __test__
-     |-- app.module.tsx
-     |-- routes.tsx
-     |-- index.js
+          |-- app.module.tsx
+          |-- routes.tsx
+          |-- index.js
 
 ## Running the tests
 
@@ -93,18 +92,31 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-|   Name            |    Version    |         License        |    Description                                                                              |
-|-------------------|:-------------:|:----------------------:|---------------------------------------------------------------------------------------------|
-| react             |    16.12.0    |       MIT License      | [react](https://reactjs.org/docs/getting-started.html)                                      |
-| react-dom         |    16.12.0    |       MIT License      | [react-dom](https://reactjs.org/docs/react-dom.html)                                        |
-| react-scripts     |      3.2.0    |       MIT License      | Scripts and configuration used by [CRA](https://create-react-app.dev/docs/getting-started/) |
-| react-router-dom  |      5.1.2    |       MIT License      | [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)           |
-| typescript        |      3.7.2    |   Apache License 2.0   | [typescript](https://www.typescriptlang.org/)                                               |
-| core-js           |      3.4.1    |       MIT License      | Modular standard library for JavaScript [core-js](https://github.com/zloirock/core-js)      |
-| material-ui/core  |      4.6.1    |       MIT License      | [material-ui/core](https://material-ui.com/getting-started/installation/)                   |
-| material-ui/icons |      4.5.1    |       MIT License      | [material-ui/icons](https://material-ui.com/components/material-icons/)                     |
-| jest              |     24.9.0    |       MIT License      | Testing Framework [jest](https://jestjs.io/docs/en/getting-started.html)                    |
-| enzyme            |     3.10.0    |       MIT License      | Testing utility for React [enzyme](https://airbnb.io/enzyme/docs/api/)                      |
+|   Name               |    Version    |         License        |    Description                                                                              |
+|----------------------|:-------------:|:----------------------:|---------------------------------------------------------------------------------------------|
+| react                |    16.12.0    |       MIT License      | [react](https://reactjs.org/docs/getting-started.html)                                      |
+| react-dom            |    16.12.0    |       MIT License      | [react-dom](https://reactjs.org/docs/react-dom.html)                                        |
+| react-scripts        |      3.2.0    |       MIT License      | Scripts and configuration used by [CRA](https://create-react-app.dev/docs/getting-started/) |
+| react-router-dom     |      5.1.2    |       MIT License      | [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)           |
+| typescript           |      3.7.2    |   Apache License 2.0   | [typescript](https://www.typescriptlang.org/)                                               |
+| core-js              |      3.4.1    |       MIT License      | Modular standard library for JavaScript [core-js](https://github.com/zloirock/core-js)      |
+| material-ui/core     |      4.6.1    |       MIT License      | [material-ui/core](https://material-ui.com/getting-started/installation/)                   |
+| material-ui/icons    |      4.5.1    |       MIT License      | [material-ui/icons](https://material-ui.com/components/material-icons/)                     |
+| jest                 |     24.9.0    |       MIT License      | Testing Framework [jest](https://jestjs.io/docs/en/getting-started.html)                    |
+| enzyme               |     3.10.0    |       MIT License      | Testing utility for React [enzyme](https://airbnb.io/enzyme/docs/api/)                      |
+| apollo/react-hooks   |      3.1.3    |       ???????????      |                                                                                             |
+| apollo-boost         |      0.4.5    |       ???????????      |                                                                                             |
+| apollo-cache-inmemory|      1.6.3    |       ???????????      |                                                                                             |
+| apollo-client        |      2.6.4    |       ???????????      |                                                                                             |
+| apollo-link          |     1.2.13    |       ???????????      |                                                                                             |
+| apollo-link-error    |     1.1.12    |       ???????????      |                                                                                             |
+| apollo-link-http     |     1.5.16    |       ???????????      |                                                                                             |
+| graphql              |     14.5.8    |       ???????????      |                                                                                             |
+| graphql-tag          |     2.10.1    |       ???????????      |                                                                                             |
+| i18next-browser-lan..|      4.0.1    |       ???????????      |                                                                                             |
+| i18next-xhr-backend  |      3.2.2    |       ???????????      |                                                                                             |
+| react-i18next        |     11.2.2    |       ???????????      |                                                                                             |
+| standard             |     14.3.1    |       ???????????      |  JavaScript Standard Style [standard](https://standardjs.com)                               |
 
 ## Contributing
 

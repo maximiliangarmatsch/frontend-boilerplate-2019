@@ -1,14 +1,14 @@
 import React from 'react';
 // Router
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // material-ui core components
 import { Typography } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 // Header config
-import { config } from './config.module';
+import { config } from './config.component';
 // Header style
-import { styles } from './style.module';
+import { styles } from './style.component';
 
 function Header() {
     const classes = styles();

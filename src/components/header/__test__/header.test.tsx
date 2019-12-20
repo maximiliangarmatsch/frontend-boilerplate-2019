@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, shallow } from 'enzyme';
 // Template Component
-import Header from '../header.module';
+import Header from '../header.component';
 
 describe('<Header />', () => {
     test('renders', () => {
@@ -10,7 +10,7 @@ describe('<Header />', () => {
     });
     test('header should have links', () => {
         const wrapper = shallow(<Header />);
-        expect(wrapper.find('Link').length).toEqual(3);
+        expect(wrapper.find('Link').length).toEqual(1);
     });
     test('links should have props', () => {
         const wrapper = shallow(<Header />);

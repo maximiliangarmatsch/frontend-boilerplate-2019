@@ -4,11 +4,37 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-```text
-npm install
+Just clone one of the master [branches](#branches):
 
+```sh
+ git clone -b master https://github.com/maximiliangarmatsch/frontend-boilerplate my-app
+ cd my-app
+```
+
+You will probably want to remove git history and start a brand new repository:
+
+```sh
+ rm -rf .git
+ git init
+```
+
+### 2. Install dependencies
+
+```sh
+npm install
+```
+
+### 3. Run the app
+
+```sh
 npm run start
 ```
+
+It will start the development server with [HMR](https://webpack.github.io/docs/hot-module-replacement) on top of it.
+
+> [http://localhost:3000](http://localhost:3000) — Server
+
+Now you can open [http://localhost:3000](http://localhost:3000) in browser and start developing.
 
 ### Ininitialization
 
@@ -82,22 +108,8 @@ src
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```text
-Give an example
-```
-
-### Coding style tests
-
-Explain what these tests test and why
-
-```text
-Give an example
+npm run test
 ```
 
 ## Deployment

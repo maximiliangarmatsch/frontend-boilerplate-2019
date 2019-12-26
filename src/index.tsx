@@ -1,16 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloProvider } from '@apollo/react-hooks'
 import * as serviceWorker from './serviceWorker'
 import App from './ui/app'
-import { client } from './config/apollo.config';
+import { client } from './config/apollo.config'
 
 ReactDOM.render(
- 
-        <ApolloProvider client={client}>
-            <App />
-        </ApolloProvider>,
-    document.getElementById('root')
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
 )
 
 // If you want your app to work offline and load faster, you can change

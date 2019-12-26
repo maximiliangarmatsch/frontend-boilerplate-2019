@@ -7,4 +7,4 @@ export const gqlUser = gql`
             firstName
         }
     }
-`;
+`

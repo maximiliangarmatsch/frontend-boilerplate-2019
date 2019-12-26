@@ -1,4 +1,4 @@
-import { IRoute } from '../interfaces/route.interface';
+import { IRoute } from '../interfaces/route.interface'
 
 const routes: IRoute = {
 	list: [{
@@ -21,4 +21,4 @@ const routes: IRoute = {
 
 export const appConfig={
 	routes
-}
+};
